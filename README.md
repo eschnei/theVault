@@ -139,4 +139,4 @@ See [SETUP.md](./SETUP.md#troubleshooting) for common issues and solutions.
 
 ## License
 
-Private - All rights reserved
+MIT License - see [LICENSE](LICENSE) for details.

@@ -38,3 +38,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# editor/tool configs
+.braingrid/
+.claude/
+CLAUDE.md
