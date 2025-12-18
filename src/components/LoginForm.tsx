@@ -99,7 +99,18 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
         disabled={isLoading}
         className="w-full px-4 py-2 bg-black text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {isLoading ? 'Authenticating...' : 'Access Content'}
+        {isLoading ? (
+          <span className="inline-flex items-center">
+            Authenticating
+            <span className="ml-1 inline-flex">
+              <span className="animate-[bounce_1s_infinite_0ms] mx-[1px]">.</span>
+              <span className="animate-[bounce_1s_infinite_200ms] mx-[1px]">.</span>
+              <span className="animate-[bounce_1s_infinite_400ms] mx-[1px]">.</span>
+            </span>
+          </span>
+        ) : (
+          'Access Content'
+        )}
       </button>
     </form>
   );
